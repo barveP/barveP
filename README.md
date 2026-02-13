@@ -1,8 +1,5 @@
 <div align="center">
 
-  <img src="assets/profile.jpg" width="150" style="border-radius: 50%;" alt="Poorva Barve"/>
-
-
   # Hi there! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/> I'm Poorva Barve
 
 
