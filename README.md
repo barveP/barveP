@@ -4,7 +4,7 @@
 
 Seattle, WA · M.S. Computer Science, Northeastern University · GPA 4.0/4.0
 
-[LinkedIn](https://www.linkedin.com/in/poorvabarve/) · [Email](mailto:poorvabarve@gmail.com) · [Resume](https://drive.google.com/file/d/1cVwhQTNSRK1UtRlXYjd3R1wa8RQe1ut0/view?usp=sharing)
+[LinkedIn](https://www.linkedin.com/in/poorvabarve/) · [Email](mailto:poorvabarve@gmail.com) · [Resume](https://drive.google.com/file/d/1134dNIzFmiWhhZDI6hE1jORVi_ZNNYxH/view?usp=sharing)
 
 I build backend services, distributed systems, and practical AI applications. My open-source work in **OpenHands, pytest, and Apache Ossie** focuses on protecting file integrity, preserving business calculations, and preventing incorrect test results.
 
