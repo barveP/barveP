@@ -1,77 +1,41 @@
-# Hi, I'm Poorva Barve
+# Poorva Barve
 
-**Software Engineer · Backend Systems · AI Applications**
+I study how to evaluate AI agents when the specifications, data definitions, or benchmarks they rely on are unreliable. I’m applying to PhD programs for Fall 2027.
 
-Seattle, WA · M.S. Computer Science, Northeastern University · GPA 4.0/4.0
+[ORCID](https://orcid.org/0009-0009-0312-4125) · [LinkedIn](https://www.linkedin.com/in/poorvabarve/) · [Email](mailto:poorvabarve@gmail.com)
 
-[LinkedIn](https://www.linkedin.com/in/poorvabarve/) · [Email](mailto:poorvabarve@gmail.com) · [Resume](https://drive.google.com/file/d/1134dNIzFmiWhhZDI6hE1jORVi_ZNNYxH/view?usp=sharing)
+## Independent research
 
-I build backend services, distributed systems, and practical AI applications. My open-source work in **OpenHands, pytest, and Apache Ossie** focuses on protecting file integrity, preserving business calculations, and preventing incorrect test results.
+### When the Semantic Layer Is Wrong
 
-**I'm looking for software engineering roles in backend development, distributed systems, and AI applications.**
+I ran 1,512 text-to-SQL trials across three LLMs using 24 controlled faults in an Apache Ossie semantic layer. Models followed plausible but incorrect business definitions in 46–73% of trials, and pooled accuracy fell 26 percentage points below the no-layer baseline.
+
+[Preprint](https://doi.org/10.5281/zenodo.23940769) · [Code and results](https://github.com/barveP/semantic-layer-trust-paper)
+
+### How Much Does a Parity Experiment Prove?
+
+I analyzed 58 published comparisons between original and ported benchmarks in Harbor, the evaluation framework behind Terminal-Bench. The range-overlap rule passed 57 comparisons, including one with a 15.6-point gap. Only 22 comparisons showed equivalence within 3 points. Under review at the AGENT workshop at ICSE 2027.
+
+[Preprint](https://doi.org/10.5281/zenodo.24075880) · [Code and results](https://github.com/barveP/benchmark-port-parity-study)
+
+### Specification drift
+
+I’m studying how implementation changes can leave accepted requirements stale and whether automated checks can flag that drift during code review.
 
 ## Open-source contributions
 
-I investigate failures, report reproducible issues, and develop upstream patches. My recent pull requests focus on:
+- **Apache Ossie.** Fixed semantic model parsing, serialization, and conversion bugs that could silently change metric definitions. Four merged pull requests. [#618](https://github.com/apache/ossie/pull/618) · [#388](https://github.com/apache/ossie/pull/388) · [#377](https://github.com/apache/ossie/pull/377) · [#619](https://github.com/apache/ossie/pull/619)
+- **pytest.** Fixed doctest flags leaking between docstrings and made cache write failures emit warnings. Two merged pull requests. [#15033](https://github.com/pytest-dev/pytest/pull/15033) · [#15044](https://github.com/pytest-dev/pytest/pull/15044)
+- **OpenHands.** Proposed changes to preserve symlinks during file edits and reject invalid UTF-8 before writing. Two open pull requests. [#5097](https://github.com/OpenHands/software-agent-sdk/pull/5097) · [#5109](https://github.com/OpenHands/software-agent-sdk/pull/5109)
 
-- **[OpenHands](https://github.com/OpenHands/software-agent-sdk) — AI coding-agent SDK.** Identified and reported file-integrity bugs; developed fixes to prevent silent content corruption and preserve symlinks during automated edits and undo. [PRs](https://github.com/OpenHands/software-agent-sdk/pulls?q=is%3Apr+author%3AbarveP) · [Issues](https://github.com/OpenHands/software-agent-sdk/issues?q=is%3Aissue+author%3AbarveP)
-- **[pytest](https://github.com/pytest-dev/pytest) — widely used Python testing framework.** Developed a fix for a four-year-old isolation bug that caused false test results. Also discovered and reported cache I/O errors that failed otherwise passing tests, and patched them to produce warnings. [PRs](https://github.com/pytest-dev/pytest/pulls?q=is%3Apr+author%3AbarveP) · [Issue](https://github.com/pytest-dev/pytest/issues/15043)
-- **[Apache Ossie](https://github.com/apache/ossie) — semantic interoperability at the Apache Software Foundation.** Identified and reported SQL conversion bugs that silently changed calculations or misclassified queries; developed fixes preserving business metrics and query definitions across dbt and Snowflake. [PRs](https://github.com/apache/ossie/pulls?q=is%3Apr+author%3AbarveP) · [Issues](https://github.com/apache/ossie/issues?q=is%3Aissue+author%3AbarveP)
+## Teaching
+
+I was a graduate teaching assistant at Northeastern University in 2025. For **CS 3500 Object-Oriented Design**, I ran Java labs for 28 students, graded assignments, and held office hours. For **CS 4973 Cloud Computing**, I designed a three-tier AWS lab and graded labs and assignments for a class of 39.
 
 ## Selected projects
 
-### [Snowbridge Async — Data Ingestion & Analytics](https://github.com/barveP/async-data-ingestion-platform)
-**Python · asyncio · Snowflake · Airflow · MCP**
+- **Oral cancer gene expression classifier.** Compared classifiers for distinguishing oral squamous cell carcinoma from normal tissue using public GEO microarray data. [Repository](https://github.com/barveP/oral-cancer-gene-expression-classifier)
+- **Oral microbiome analysis.** Built a Python and R pipeline for exploring periodontal microbiome diversity using simulated abundance data. [Repository](https://github.com/barveP/oral-microbiome-analysis)
+- **Chat with Data.** Built a Slack integration for Snowflake Cortex that returns the generated SQL and full results alongside answers. [Repository](https://github.com/barveP/Snowflake-Cortex-Slack-Integration)
 
-A reusable ingestion framework that safely resumes interrupted REST and database loads into Snowflake. Uses bounded concurrency, transactional checkpoints, and idempotent writes, with governed analytics exposed through MCP tools.
-
-### [Chat with Data — Snowflake AI Agents in Slack](https://github.com/barveP/Snowflake-Cortex-Slack-Integration)
-**Python · Snowflake Cortex · Slack Bolt · SQL**
-
-Brings conversational data analysis into Slack: ask questions in plain English, follow up in the same thread, and receive answers with generated SQL and full results attached. Keeps conversation context so users can explore data without writing SQL.
-
-### [NutriGraph — Meal Planning & Recipe Discovery](https://github.com/barveP/Recipe-Assistant-LangGraph-RAG)
-**Python · LangGraph · Neo4j · Redis**
-
-A meal-planning workflow that combines vector, keyword, and graph retrieval, adapts recipes to dietary constraints, and retries planning when nutrition or budget goals are missed. Supports a local recipe catalog so the core workflow can run without an external LLM or API.
-
-### [StayFinder — Full-Stack Booking Platform](https://github.com/barveP/Airbnb-Replica)
-**Node.js · Express · React · PostgreSQL · Redis · GraphQL**
-
-A booking application with separate host and guest workflows, transaction-protected reservations, and cached property search shared across REST and GraphQL APIs. Coordinates concurrent booking requests to prevent overlapping reservations.
-
-**More builds:** [AI Interview Coach](https://github.com/barveP/cf_ai_interview_prep_app) — streaming feedback, voice input, and session history on Cloudflare · [LinkedIn clone](https://github.com/barveP/Linkedin-clone)
-
-## Experience
-
-**Northeastern University — Teaching Assistant**  
-May–August 2025 · Seattle, WA
-
-- Cut manual code review time by 60% with an AI bot that detected MVC and SOLID violations in student pull requests.
-- Built and deployed a hackathon management platform with Spring Boot, React, MongoDB, and AWS.
-- Built reference systems supporting 500+ concurrent chat connections and an API load-tested at 5K requests/second; mentored 40+ students through hands-on AWS labs.
-
-**Simplicity Creations — Software Engineer Intern**  
-August–December 2023 · Pune, India
-
-- Built an HR platform serving 50+ employees with Flask, React, and PostgreSQL, delivering 15+ REST APIs.
-- Implemented approval and reporting workflows, with role-based access controls protecting payroll and personnel data across three user tiers.
-
-## Tools I work with
-
-| Area | Technologies |
-| --- | --- |
-| Languages | Python, Java, JavaScript, TypeScript, SQL, C/C++ |
-| Backend & web | Spring Boot, Flask, Node.js, Express, React, REST, GraphQL, WebSockets |
-| AI & data | LangGraph, RAG, Snowflake Cortex, MCP, Airflow, dbt, SQLGlot |
-| Databases | PostgreSQL, MySQL, MongoDB, Redis, Snowflake, Neo4j |
-| Cloud & engineering | AWS, Docker, Kubernetes, Git, CI/CD, pytest |
-
-## Education & background
-
-**M.S. in Computer Science — Northeastern University, May 2026**  
-GPA: 4.0/4.0 · Focus: distributed systems, cloud computing, algorithms, databases, and practical AI.
-
-I started my career in dentistry before moving into software engineering. That experience taught me to listen carefully, diagnose problems, and think about the person using what I build.
-
-[Let's connect on LinkedIn](https://www.linkedin.com/in/poorvabarve/) · [Email me](mailto:poorvabarve@gmail.com) · [LeetCode](https://leetcode.com/u/Pbarve/)
+I earned an M.S. in Computer Science from Northeastern University in 2026 and worked as a dentist before moving into computer science.
