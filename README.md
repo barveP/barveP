@@ -8,7 +8,7 @@ I study how to evaluate AI agents when the specifications, data definitions, or 
 
 ### When the Semantic Layer Is Wrong
 
-I ran 1,512 text-to-SQL trials across three LLMs using 24 controlled faults in an Apache Ossie semantic layer. Models followed plausible but incorrect business definitions in 46–73% of trials, and pooled accuracy fell 26 percentage points below the no-layer baseline.
+I ran 1,512 single-turn text-to-SQL trials across three LLMs using 24 controlled faults in an Apache Ossie semantic layer. The models had no access to tools during the trials. Models followed plausible but incorrect business definitions in 46–73% of trials, and pooled accuracy fell 26 percentage points below the no-layer baseline.
 
 [Preprint](https://doi.org/10.5281/zenodo.23940769) · [Code and results](https://github.com/barveP/semantic-layer-trust-paper)
 
